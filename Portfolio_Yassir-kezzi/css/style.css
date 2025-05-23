@@ -118,16 +118,52 @@ section {
 /* end About Section */
 
 /* start Skills Section */
-.skill-card {
-    transition: all 0.3s;
-    background-color: rgba(0, 0, 22, 0.9);
-    color: white;
+#skills {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    padding: 80px 0;
 }
 
-.skill-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
+#skills .skill-item {
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
 }
+
+#skills .skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important; 
+}
+
+#skills .skill-icon {
+    width: 50px;  /* Set a fixed width for the icon */
+    height: 50px; /* Set a fixed height for the icon */
+    object-fit: contain; /* Ensures the image scales down without cropping */
+    border-radius: 5px; /* Slightly rounded corners for icons */
+    flex-shrink: 0; /* Prevents the icon from shrinking */
+}
+
+#skills .skill-item h5 {
+    color: #343a40;
+    font-size: 1.15rem;
+}
+
+#skills .skill-item span {
+    font-size: 1.1rem;
+    color: #007bff; 
+}
+
+#skills .progress {
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-radius: 5px;
+    overflow: hidden; 
+}
+
+#skills .progress-bar {
+    border-radius: 5px;
+    background-color: #007bff; 
+    transition: width 0.6s ease-in-out; 
+}
+
 /* start Skills Section */
 
 /* start Projects Section */
